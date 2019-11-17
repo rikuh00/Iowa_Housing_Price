@@ -13,7 +13,7 @@ os.chdir(parent)
 data_path = os.path.join(parent, 'data','train.csv')
 df_house = pd.read_csv(data_path)
 
-#%% Data Summary
+#%% DATA SUMMARY
 print(df_house.describe())
 
 avg_lot_size = df_house.LotArea.mean()
@@ -26,6 +26,7 @@ print('The newest house is {:.0f} years old'.format(newest_house_age))
 print('\n')
 
 #%% MODELLING
+
 # FUNCTION - Print Functions for Outputs
 def print_price_prediction(X, y, house_price_prediction):
     print('Sale Price Prediction for the first 5 houses:')
